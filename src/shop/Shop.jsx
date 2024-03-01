@@ -5,7 +5,7 @@ const Shop = () => {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/all-books")
+        fetch('https://inventory-app-backend-g8cz.onrender.com/all-books')
             .then(res => res.json())
             .then(data => setBooks(data));
     }, []);
